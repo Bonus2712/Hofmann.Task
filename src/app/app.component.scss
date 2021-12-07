@@ -1,0 +1,53 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.scroll-container {
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 250px;
+        margin: 24px auto;
+    }
+
+    mat-spinner {
+        margin: 24px auto;
+    }
+
+    .form {
+        width: 400px;
+        margin: 24px auto;
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 26px;
+
+            mat-form-field {
+                width: 100%;
+            }
+
+            .privacy {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .accept {
+            display: flex;
+            margin-top: 16px;
+        }
+    }
+}
